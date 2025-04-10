@@ -1,4 +1,5 @@
-Architecture
+##Architecture
+```mermaid
 graph TD
     Client[Client Requests] --> Router[Router/Load Balancer]
     
@@ -42,8 +43,7 @@ graph TD
     style Replica3B fill:#9cf,stroke:#333,stroke-width:1px
     style Router fill:#bd4,stroke:#333,stroke-width:2px
     style ShardManager fill:#bd4,stroke:#333,stroke-width:2px
-
-
+```
 
 # MIT 6.824 Distributed Systems Labs
 
