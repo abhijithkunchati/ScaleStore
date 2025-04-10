@@ -1,4 +1,5 @@
-##Architecture
+## Architecture
+
 ```mermaid
 graph TD
     Client[Client Requests] --> Router[Router/Load Balancer]
@@ -32,17 +33,21 @@ graph TD
         Primary3 -.-> |Heartbeat| Replica3B
     end
     
-    style Primary1 fill:#f96,stroke:#333,stroke-width:2px
-    style Primary2 fill:#f96,stroke:#333,stroke-width:2px
-    style Primary3 fill:#f96,stroke:#333,stroke-width:2px
-    style Replica1A fill:#9cf,stroke:#333,stroke-width:1px
-    style Replica1B fill:#9cf,stroke:#333,stroke-width:1px
-    style Replica2A fill:#9cf,stroke:#333,stroke-width:1px
-    style Replica2B fill:#9cf,stroke:#333,stroke-width:1px
-    style Replica3A fill:#9cf,stroke:#333,stroke-width:1px
-    style Replica3B fill:#9cf,stroke:#333,stroke-width:1px
-    style Router fill:#bd4,stroke:#333,stroke-width:2px
-    style ShardManager fill:#bd4,stroke:#333,stroke-width:2px
+    style Client fill:#E9F2FF,stroke:#4A6FA5,stroke-width:1px,color:#333
+    style Router fill:#C9F7FF,stroke:#1A85AD,stroke-width:1px,color:#333
+    style ShardManager fill:#C9F7FF,stroke:#1A85AD,stroke-width:1px,color:#333
+    style HashFunction fill:#C9F7FF,stroke:#1A85AD,stroke-width:1px,color:#333
+    
+    style Primary1 fill:#FFE0B2,stroke:#E67700,stroke-width:1px,color:#333
+    style Primary2 fill:#FFE0B2,stroke:#E67700,stroke-width:1px,color:#333
+    style Primary3 fill:#FFE0B2,stroke:#E67700,stroke-width:1px,color:#333
+    
+    style Replica1A fill:#E3F2FD,stroke:#1976D2,stroke-width:1px,color:#333
+    style Replica1B fill:#E3F2FD,stroke:#1976D2,stroke-width:1px,color:#333
+    style Replica2A fill:#E3F2FD,stroke:#1976D2,stroke-width:1px,color:#333
+    style Replica2B fill:#E3F2FD,stroke:#1976D2,stroke-width:1px,color:#333
+    style Replica3A fill:#E3F2FD,stroke:#1976D2,stroke-width:1px,color:#333
+    style Replica3B fill:#E3F2FD,stroke:#1976D2,stroke-width:1px,color:#333
 ```
 
 # MIT 6.824 Distributed Systems Labs
